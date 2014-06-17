@@ -1,0 +1,13 @@
+in your Gemfile
+
+gem 'rails_admin_report', :git => 'git://github.com/clairton/rails_admin_report.git'
+gem 'pdfkit'
+gem 'wkhtmltopdf-binary'
+
+Config action on config/initializers/rails_admin.rb
+
+RailsAdmin.config do |config|
+  config.actions do
+    report
+  end
+end
